@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forge.link | Solana Launchpad</title>
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/wjgY8SJd/Untitled-design-2025-12-29T223505-883.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lime: '#CCFF00',
+              obsidian: '#0D0D0D',
+              surface: '#1A1A1A',
+            },
+            fontFamily: {
+              sans: ['Space Grotesk', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'glow': 'glow 2s ease-in-out infinite alternate',
+            },
+            keyframes: {
+              glow: {
+                '0%': { boxShadow: '0 0 5px #CCFF00, 0 0 10px #CCFF00' },
+                '100%': { boxShadow: '0 0 15px #CCFF00, 0 0 30px #CCFF00' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0D0D0D;
+        color: white;
+        overflow-x: hidden;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0D0D0D;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #CCFF00;
+        border-radius: 10px;
+      }
+      .neon-border {
+        border: 1px solid rgba(204, 255, 0, 0.2);
+        box-shadow: 0 0 15px rgba(204, 255, 0, 0.1);
+      }
+      .glass {
+        background: rgba(26, 26, 26, 0.8);
+        backdrop-filter: blur(12px);
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react/": "https://esm.sh/react@19.0.0/",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/": "https://esm.sh/react-dom@19.0.0/",
+    "framer-motion": "https://esm.sh/framer-motion@11.11.17?external=react,react-dom",
+    "lucide-react": "https://esm.sh/lucide-react@0.475.0?external=react,react-dom",
+    "react-router-dom": "https://esm.sh/react-router-dom@7.2.0?external=react,react-dom",
+    "sonner": "https://esm.sh/sonner@2.0.1?external=react,react-dom"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
